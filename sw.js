@@ -5,9 +5,9 @@ self.addEventListener('install', evento => {
     const cache = caches.open(cache_name).then(cache => {
         return cache.addAll([
             '/',
-            '/index.html',
-            '/style.css',
-            '/app.js',
+            'index.html',
+            'style.css',
+            'app.js',
         ])
     })
     evento.waitUntil(cache);   
